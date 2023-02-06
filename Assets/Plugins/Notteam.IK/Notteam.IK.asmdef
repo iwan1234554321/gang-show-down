@@ -1,0 +1,17 @@
+{
+    "name": "Notteam.IK",
+    "rootNamespace": "Notteam.IK",
+    "references": [
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:34cc090739a850c439e7de66db95c2c3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
