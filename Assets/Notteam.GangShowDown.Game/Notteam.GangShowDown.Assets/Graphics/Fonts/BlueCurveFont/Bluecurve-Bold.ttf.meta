@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8a78ddb18effd664cb877344bee840a5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Blue curve
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 93d6b044879b0024ab53093714f79ee4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
