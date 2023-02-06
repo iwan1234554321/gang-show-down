@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062eb77111436744a95ccc67faf643bc, type: 3}
+  m_Name: PistolShotPose
+  m_EditorClassIdentifier: 
+  time: 0.1
+  curve: {fileID: 0}
+  pose:
+    handL:
+      targetPositions:
+        position: {x: -0.001, y: 1.274, z: 0.416}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+      guidePositions:
+        position: {x: -0.317, y: 1.059, z: -0.15}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+    handR:
+      targetPositions:
+        position: {x: 0.215, y: 1.352, z: 0.368}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+      guidePositions:
+        position: {x: 0.295, y: 1.25, z: -0.586}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+    legL:
+      targetPositions:
+        position: {x: -0.166, y: 0.1, z: 0.256}
+        rotation: {x: 0, y: 0.16745703, z: 0, w: 0.9858794}
+      guidePositions:
+        position: {x: -0.11, y: 0.5, z: 0.699}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+    legR:
+      targetPositions:
+        position: {x: 0.184, y: 0.1, z: -0.358}
+        rotation: {x: 0, y: 0.22750118, z: 0, w: 0.9737779}
+      guidePositions:
+        position: {x: 0.496, y: 0.5, z: 0.35}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+    hip:
+      position: {x: 0, y: 0.92, z: -0.01}
+      rotation: {x: 0.08052145, y: 0.3812272, z: -0.033353075, w: 0.9203639}
+    spineStart:
+      position: {x: 0, y: 0.10808444, z: -0.0072756596}
+      rotation: {x: -0.033600062, y: 0, z: 0, w: 0.99943537}
+    spineMiddle:
+      position: {x: 0, y: 0.12638389, z: 0}
+      rotation: {x: 0.13002947, y: 0.08641016, z: -0.011376109, w: 0.98767215}
+    spineFinal:
+      position: {x: 0, y: 0.14443873, z: 0}
+      rotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
+    neck:
+      position: {x: 0, y: 0.16249342, z: 0}
+      rotation: {x: -0.18946978, y: -0.38817194, z: 0.020533854, w: 0.90166634}
+    head:
+      position: {x: 0, y: 0.0443504, z: 0.011641937}
+      rotation: {x: -0, y: -0, z: -0, w: 1}

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062eb77111436744a95ccc67faf643bc, type: 3}
+  m_Name: Poison4Pose
+  m_EditorClassIdentifier: 
+  time: 0.75
+  curve: {fileID: 0}
+  pose:
+    handL:
+      targetPositions:
+        position: {x: -0.306, y: 0.862, z: 0.283}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+      guidePositions:
+        position: {x: -0.553, y: 1.25, z: -0.15000002}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+    handR:
+      targetPositions:
+        position: {x: 0.098000005, y: 0.988, z: 0.030999985}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+      guidePositions:
+        position: {x: 0.38300002, y: 1.113, z: -0.34500003}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+    legL:
+      targetPositions:
+        position: {x: -0.166, y: 0.1, z: 0.256}
+        rotation: {x: 0, y: 0.16745703, z: 0, w: 0.9858794}
+      guidePositions:
+        position: {x: -0.11, y: 0.5, z: 0.699}
+        rotation: {x: -0, y: -0, z: -0, w: 1}
+    legR:
+      targetPositions:
+        position: {x: 0.184, y: 0.1, z: -0.358}
+        rotation: {x: -0.00000007147167, y: 0.22750138, z: -0.00000030592133, w: 0.9737778}
+      guidePositions:
+        position: {x: 0.496, y: 0.5, z: 0.35}
+        rotation: {x: -2.741557e-15, y: 0.00000002617994, z: -0.00000010471976, w: 1}
+    hip:
+      position: {x: -0.18299998, y: 0.92, z: -0.000000014901161}
+      rotation: {x: 0.24051909, y: 0.36948776, z: -0.099626265, w: 0.89202243}
+    spineStart:
+      position: {x: 0, y: 0.10808444, z: -0.0072756596}
+      rotation: {x: -0.033600062, y: 0, z: 0, w: 0.99943537}
+    spineMiddle:
+      position: {x: 0, y: 0.12638389, z: 0}
+      rotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
+    spineFinal:
+      position: {x: 0, y: 0.14443873, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    neck:
+      position: {x: 0, y: 0.16249342, z: 0}
+      rotation: {x: 0.13125099, y: -0.3883946, z: 0.15241347, w: 0.89927363}
+    head:
+      position: {x: 0, y: 0.0443504, z: 0.011641937}
+      rotation: {x: -0.048846204, y: -0.15684557, z: -0.0077670678, w: 0.98638386}
