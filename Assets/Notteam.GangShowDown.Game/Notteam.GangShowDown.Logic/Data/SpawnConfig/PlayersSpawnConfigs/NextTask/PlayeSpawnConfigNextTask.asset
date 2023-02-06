@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec95c5d4f3220dd42bb1580545fc1f30, type: 3}
+  m_Name: PlayeSpawnConfigNextTask
+  m_EditorClassIdentifier: 
+  player: {fileID: 7705003479531720902, guid: b60e2ac48a0421a46be872b1195cafc4, type: 3}
+  playerCharacterCollectionConfig: {fileID: 11400000, guid: f97e829db4da866488483bf1e2b65dc5, type: 2}
+  playerSpawnData:
+  - name: Rayan Gosling
+  - name: A damn Sandle

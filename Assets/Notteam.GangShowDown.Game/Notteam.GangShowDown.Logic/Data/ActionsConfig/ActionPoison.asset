@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7229f10d56e8ed14e9e495a61874d496, type: 3}
+  m_Name: ActionPoison
+  m_EditorClassIdentifier: 
+  data:
+    type: 2
+    useType: 6
+    icon: {fileID: 21300000, guid: f2e8bd1c8b7fc334d85fb1db918a2035, type: 3}
+    iconModifer: {fileID: 21300000, guid: 971c0182900b14b4d922226986cc20a3, type: 3}
+    iconModiferColor: {r: 1, g: 0.89918447, b: 0, a: 1}
+    actionTimeline: {fileID: 2022197914036384164, guid: 8eb1ef306c525774ebf2b82c23b81742, type: 3}
+    skipActionTimeline: {fileID: 7018820335445032126, guid: efe709ca18810b947a0129b712c688b2, type: 3}
+    functions:
+    - type: 2
+      updateCount: 2
+      healthModifer: 1
+      defenceModifer: 0
+      addOrRemoveAction: 
+    - type: 5
+      updateCount: 2
+      healthModifer: 0
+      defenceModifer: 0
+      addOrRemoveAction: 

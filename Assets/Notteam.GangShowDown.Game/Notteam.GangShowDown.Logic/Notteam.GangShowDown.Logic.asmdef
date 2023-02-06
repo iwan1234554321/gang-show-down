@@ -1,0 +1,18 @@
+{
+    "name": "Notteam.GangShowDown.Logic",
+    "rootNamespace": "Notteam.GangShowDown.Logic",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:34cc090739a850c439e7de66db95c2c3",
+        "GUID:02cd59fd72bc61c4c993044cd591fbd0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
