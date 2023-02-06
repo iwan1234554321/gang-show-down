@@ -1,8 +1,12 @@
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace Notteam.IK
 {
+    
+#if UNITY_EDITOR
     public static class CreateLimbLengthAsset
     {
         [MenuItem("GameObject/Notteam/IK/Create Limb Length Data")]
@@ -32,6 +36,7 @@ namespace Notteam.IK
                 Debug.LogWarning("Selected object cannot be calculated because it lacks child objects");
         }
     }
+#endif
     
     [CreateAssetMenu(fileName = "LimbLength", menuName = "Notteam/IK/Create Limb Length Data", order = 0)]
     public class LimbLength : ScriptableObject
