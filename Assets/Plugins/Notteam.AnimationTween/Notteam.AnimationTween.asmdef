@@ -1,0 +1,14 @@
+{
+    "name": "Notteam.AnimationTween",
+    "rootNamespace": "Notteam.AnimationTween",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
