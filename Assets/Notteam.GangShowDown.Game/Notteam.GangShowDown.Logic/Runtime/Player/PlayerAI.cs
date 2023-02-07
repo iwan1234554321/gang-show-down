@@ -12,7 +12,6 @@ namespace Notteam.GangShowDown.Logic
         [SerializeField] private float delayMax = 0.7f;
         [SerializeField] private float moveTime = 0.5f;
         [SerializeField] private Vector3 positionAction;
-        [SerializeField] private bool endDrag;
 
         private Action _playerAction;
         
@@ -29,7 +28,7 @@ namespace Notteam.GangShowDown.Logic
                 },
                 finalAnimation: () =>
                 {
-                    _playerAction.DragObject.EndDrag(positionAction);
+                    _playerAction.DragObject.SetEndDrag(positionAction);
                 });
         }
         
@@ -61,7 +60,7 @@ namespace Notteam.GangShowDown.Logic
                     
                     
                 
-                    _playerAction.DragObject.BeginDrag(positionAction);
+                    _playerAction.DragObject.SetBeginDrag(positionAction);
                     
                     AnimateMoveAction(selectedTarget.transform.position);
                 }
@@ -101,16 +100,7 @@ namespace Notteam.GangShowDown.Logic
         private void Update()
         {
             if (_playerAction)
-            {
-                _playerAction.DragObject.ProcessDrag(positionAction);
-            }
-
-            if (endDrag)
-            {
-                _playerAction.DragObject.EndDrag(positionAction);
-                
-                endDrag = false;
-            }
+                _playerAction.DragObject.SetProcessDrag(positionAction);
         }
     }
 }
