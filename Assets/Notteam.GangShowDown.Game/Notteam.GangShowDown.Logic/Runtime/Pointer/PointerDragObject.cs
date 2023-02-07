@@ -12,12 +12,13 @@ namespace Notteam.GangShowDown.Logic
         public event System.Action<Vector3> OnEndDrag;
 
         private bool _dragged;
+        private bool _draggedOutside;
         
         private Vector3 _dragDelta;
         
         private PointerCollision _pointerCollision;
 
-        public void BeginDrag(Vector3 position)
+        private void BeginDragInternal(Vector3 position)
         {
             if (!_dragged)
             {
@@ -30,7 +31,7 @@ namespace Notteam.GangShowDown.Logic
             }
         }
         
-        public void ProcessDrag(Vector3 position)
+        private void ProcessDragInternal(Vector3 position)
         {
             _dragged = true;
             
@@ -40,7 +41,7 @@ namespace Notteam.GangShowDown.Logic
             OnProcessDrag?.Invoke(position);
         }
 
-        public void EndDrag(Vector3 position)
+        private void EndDragInternal(Vector3 position)
         {
             if (_dragged)
             {
@@ -48,6 +49,45 @@ namespace Notteam.GangShowDown.Logic
 
                 _dragged = false;
             }
+        }
+        
+        private void BeginDrag(Vector3 position)
+        {
+            if (!_draggedOutside)
+                BeginDragInternal(position);
+        }
+        
+        private void ProcessDrag(Vector3 position)
+        {
+            if (!_draggedOutside)
+                ProcessDragInternal(position);
+        }
+        
+        private void EndDrag(Vector3 position)
+        {
+            if (!_draggedOutside)
+                EndDragInternal(position);
+        }
+        
+        public void SetBeginDrag(Vector3 position)
+        {
+            _draggedOutside = true;
+            
+            BeginDragInternal(position);
+        }
+        
+        public void SetProcessDrag(Vector3 position)
+        {
+            _draggedOutside = true;
+            
+            ProcessDragInternal(position);
+        }
+        
+        public void SetEndDrag(Vector3 position)
+        {
+            _draggedOutside = false;
+            
+            EndDragInternal(position);
         }
         
         private void Awake()
